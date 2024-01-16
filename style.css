@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.description {
+  text-align: center;
+  height: 15vh;
+}
+
+.description h1 {
+  line-height: 60px;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: center;
+}
+
+.color {
+  width: 20%;
+}
+
+.mix-blend-mode {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 75vh;
+  gap: 30px;
+}
+
+.mix-grid {
+  position: relative;
+}
+
+.mix-grid p {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.mix1 {
+  position: absolute;
+  border-radius: 30%;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  background-color: #000;
+  top: 30%;
+  left: 30%;
+}
+
+.mix2 {
+  position: absolute;
+  border-radius: 30%;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  background-color: #000;
+  top: 30%;
+  right: 30%;
+}
+
+.gd1 .mix2 {
+  mix-blend-mode: overlay;
+}
+
+.gd2 .mix2 {
+  mix-blend-mode: multiply;
+}
+
+.gd3 .mix2 {
+  mix-blend-mode: darken;
+}
+
+.gd4 .mix2 {
+  mix-blend-mode: color;
+}
+
+.gd5 .mix2 {
+  mix-blend-mode: difference;
+}
+
+.gd6 .mix2 {
+  mix-blend-mode: color-dodge;
+}
+
+.gd7 .mix2 {
+  mix-blend-mode: color-burn;
+}
+
+.gd8 .mix2 {
+  mix-blend-mode: hard-light;
+}
+
+.gd9 .mix2 {
+  mix-blend-mode: soft-light;
+}
